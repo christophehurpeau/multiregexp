@@ -1,0 +1,21 @@
+{
+  "name": "multiregexp",
+  "description": "multiregexp",
+  "keywords": [
+    "multiregexp",
+    "regexp"
+  ],
+  "version": "1.0.0",
+  "homepage": "https://github.com/christophehurpeau/multiregexp",
+  "license": "MIT",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (http://christophe.hurpeau.com/)",
+  "repository": "christophehurpeau/multiregexp",
+  "main": "./lib/MultiRegExp.js",
+  "dependencies": {
+    "babel-runtime": "^5.8.5"
+  },
+  "devDependencies": {
+    "proclaim": "^3.3.0",
+    "springbokjs-library": "^8.0.0"
+  }
+}
