@@ -1,3 +1,8 @@
+/docs
+/dist
+/coverage
+node_modules
+
 #*
 *$
 *.BAK
@@ -35,5 +40,3 @@ SCCS
 _$*
 _svn
 svn-commit*.tmp
-
-node_modules

@@ -3,9 +3,6 @@
 import RegExpMatch from './RegExpMatch';
 import MultiRegExpIterable from './MultiRegExpIterable';
 
-/**
- * @
- */
 export default class MultiRegExp {
     regExps: Array<RegExp>;
 

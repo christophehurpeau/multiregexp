@@ -12,11 +12,11 @@ export default class MultiRegExpIterable {
         this._index = start;
     }
 
-    get current() {
+    get current(): RegExpMatch {
         return this._current;
     }
 
-    next() {
+    next(): RegExpMatch {
         const match = this._multiRegExp.findMatch(this._string, this._index);
 
         if (match !== null) {
@@ -29,6 +29,10 @@ export default class MultiRegExpIterable {
         return match;
     }
 
+    /**
+     * @method @@iterator
+     * @returns {{next: Function}}
+     */
     [Symbol.iterator]() {
         this._index = 0;
         return {
