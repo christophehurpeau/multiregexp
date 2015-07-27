@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Multiregexp : multiregexp">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Multiregexp</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/christophehurpeau/multiregexp">View on GitHub</a>
+
+          <h1 id="project_title">Multiregexp</h1>
+          <h2 id="project_tagline">multiregexp</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/christophehurpeau/multiregexp/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/christophehurpeau/multiregexp/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="multiregexp----" class="anchor" href="#multiregexp----" aria-hidden="true"><span class="octicon octicon-link"></span></a>multiregexp <a href="https://npmjs.org/package/multiregexp"><img src="https://img.shields.io/npm/v/multiregexp.svg?style=flat" alt="NPM version"></a> <a href="https://circleci.com/gh/christophehurpeau/multiregexp"><img src="https://circleci.com/gh/christophehurpeau/multiregexp.svg?style=svg" alt="Build Status"></a> <a href="https://codeclimate.com/github/christophehurpeau/multiregexp"><img src="https://codeclimate.com/github/christophehurpeau/multiregexp/badges/gpa.svg" alt="Code Climate"></a> <a href="http://christophehurpeau.github.io/multiregexp/coverage/lcov-report/"><img src="https://codeclimate.com/github/christophehurpeau/multiregexp/badges/coverage.svg" alt="Coverage"></a>
+</h1>
+
+<p>Use multiple RegExp like you had only one ! Iterate on matches or find the first match.</p>
+
+<h2>
+<a id="quick-example" class="anchor" href="#quick-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick example</h2>
+
+<div class="highlight highlight-js"><pre><span class="pl-k">import</span> MultiRegExp <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>multiregexp<span class="pl-pds">'</span></span>; // or var MultiRegExp = require(<span class="pl-s"><span class="pl-pds">'</span>multiregexp<span class="pl-pds">'</span></span>);
+<span class="pl-k">const</span> <span class="pl-c1">multiRegExp</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">MultiRegExp</span>([
+<span class="pl-sr">    <span class="pl-pds">/</span>hi<span class="pl-pds">/</span>gi</span>,
+<span class="pl-sr">    <span class="pl-pds">/</span>hello<span class="pl-pds">/</span>gi</span>,
+]);
+
+<span class="pl-k">let</span> firstMatch <span class="pl-k">=</span> multiRegExp.firstMatch(<span class="pl-s"><span class="pl-pds">'</span>Hi ! Hello !<span class="pl-pds">'</span></span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(firstMatch.<span class="pl-c1">toString</span>());
+<span class="pl-c">// match= "Hi", start= 0, groupCount= 0</span>
+
+<span class="pl-k">let</span> firstMatch <span class="pl-k">=</span> multiRegExp.firstMatch(<span class="pl-s"><span class="pl-pds">'</span>Oh hello ! Hi !<span class="pl-pds">'</span></span>);
+<span class="pl-en">console</span><span class="pl-c1">.log</span>(firstMatch.<span class="pl-c1">toString</span>());
+<span class="pl-c">// match= "hello", start= 3, groupCount= 0</span>
+
+<span class="pl-k">for</span> (<span class="pl-k">let</span> match <span class="pl-k">of</span> multiRegExp.allMatches(<span class="pl-s"><span class="pl-pds">'</span>Oh hello ! Hi !<span class="pl-pds">'</span></span>)) {
+    <span class="pl-en">console</span><span class="pl-c1">.log</span>(match.<span class="pl-c1">toString</span>());
+    <span class="pl-c">// match= "hello", start= 3, groupCount= 0</span>
+    <span class="pl-c">// match= "Hi", start= 11, groupCount= 0</span>
+}</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Multiregexp maintained by <a href="https://github.com/christophehurpeau">christophehurpeau</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
