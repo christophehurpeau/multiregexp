@@ -12,11 +12,11 @@
   "repository": "christophehurpeau/multiregexp",
   "main": "./lib/MultiRegExp.js",
   "dependencies": {
-    "babel-runtime": "^5.8.12"
+    "babel-runtime": "^6.23.0"
   },
   "devDependencies": {
     "proclaim": "^3.3.0",
-    "springbokjs-library": "^8.0.3"
+    "springbokjs-library": "^17.0.0"
   },
   "scripts": {
     "build": "make build",
