@@ -1,6 +1,8 @@
 multiregexp [![NPM version][npm-image]][npm-url] [![Build Status][build-status-image]][build-status-url] [![Code Climate][code-climate-image]][code-climate-url] [![Coverage][coverage-image]][coverage-url]
 ============================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/christophehurpeau/multiregexp.svg)](https://greenkeeper.io/)
+
 Use multiple RegExp like you had only one ! Iterate on matches or find the first match.
 
 ## Quick example
